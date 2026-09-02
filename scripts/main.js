@@ -50,3 +50,4 @@ function selectCatalog(e) {
 catalogBtns.forEach(el => {
 	el.addEventListener('click', selectCatalog)
 })
+

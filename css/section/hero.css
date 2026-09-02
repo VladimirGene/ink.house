@@ -1,12 +1,10 @@
 /* HERO-SECTION */
 
-.hero {
-	margin-top: 6.25rem;
-}
+
 
 @media (max-width: 768px) {
 	.hero {
-		margin-top: 12rem;
+		margin-top: 2rem;
 	}
 }
 

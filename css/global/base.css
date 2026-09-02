@@ -1,14 +1,16 @@
 /* Базовые значения */
 
-html {
+html,
+body {
 	scroll-behavior: smooth;
 	font-size: 16px;
-	scroll-padding-top: 6.25rem;
+	scroll-padding-top: 100px;
 }
 
-@media (max-width: 576px) {
-	html {
-		scroll-padding-top: 8.125rem;
+@media (max-width: 768px) {
+	html,
+	body {
+		scroll-padding-top: 10px;
 	}
 }
 
@@ -66,7 +68,7 @@ body {
 }
 
 .btn:focus-visible {
-	border: .0625rem solid var(--bg-green);
+	border: 0.0625rem solid var(--bg-green);
 	background: var(--bg-focus-white);
 	color: var(--bg-green);
 }
