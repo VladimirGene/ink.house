@@ -1,0 +1,32 @@
+:root {
+	/* Основной фон */
+	--bg-header: #e1ede6;
+	--bg-body: #f4f6f5;
+
+	/* font-color */
+	--font-color: #2c2d35;
+	--text-color: #86928b;
+
+	/* Hover-font */
+	--font-white: #f4f6f5;
+	--font-black: #2c2d35;
+
+	/* Hover-bg */
+	--bg-green: #598d66;
+	--bg-yellow: #faeb97;
+
+	/* focus */
+	--bg-focus-white: #d4e8d9;
+
+	/* active */
+	--bg-active-green: #376b44;
+	--bg-active-yellow: #d9b949;
+
+	/* transition */
+	--transition: all 0.3s ease;
+
+	/* container  */
+	--container-width: 1080px;
+	--container-padding-x: 15px;
+	--container-padding-x-tablet: 33px;
+}

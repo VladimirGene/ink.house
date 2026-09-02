@@ -1,0 +1,77 @@
+/* Базовые значения */
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+	scroll-padding-top: 6.25rem;
+}
+
+@media (max-width: 576px) {
+	html {
+		scroll-padding-top: 8.125rem;
+	}
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: var(--bg-body);
+	color: var(--font-color);
+	font-weight: 500;
+}
+
+.body.no-scroll {
+	overflow-y: hidden;
+}
+
+.container {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-x);
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+	.container {
+		max-width: calc(
+			var(--container-width) + var(--container-padding-x-tablet) * 2
+		);
+		padding-inline: var(--container-padding-x-tablet);
+	}
+}
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.0625rem solid var(--bg-green);
+	width: fit-content;
+	min-width: 14.1875rem;
+	height: auto;
+	min-height: 4.0625rem;
+	font-size: 1.25rem;
+	color: var(--bg-green);
+	transition: var(--transition);
+	padding-inline: 1.25rem;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	white-space: normal;
+	flex-shrink: 0;
+}
+
+@media (hover: hover) {
+	.btn:hover {
+		background-color: var(--bg-green);
+		color: var(--font-white);
+	}
+}
+
+.btn:focus-visible {
+	border: .0625rem solid var(--bg-green);
+	background: var(--bg-focus-white);
+	color: var(--bg-green);
+}
+
+.btn:active {
+	background: var(--bg-active-green);
+	color: #fff;
+}
