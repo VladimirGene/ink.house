@@ -9,7 +9,7 @@
 }
 
 .catalog__inner {
-	position: relative;
+	overflow: hidden;
 }
 
 .catalog__control {
@@ -50,6 +50,7 @@
 .catalog__list {
 	display: flex;
 	gap: 2rem;
+	padding: 0.1875rem;
 }
 
 @media (max-width: 576px) {
@@ -112,25 +113,22 @@
 }
 
 .catalog__products {
-	position: absolute;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	gap: 1.875rem;
-	transition: opacity 0.9s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	transform: translateX(-100%);
 	transition:
-		transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
 		opacity 0.5s ease,
-		visibility 0.5s ease;
+		visibility 0.4s ease;
 }
 
 .catalog__products.catalog__products--active {
+	display: flex;
 	opacity: 1;
 	visibility: visible;
-	transform: translateX(0%);
 }
+
 .product-card {
 	flex: 1 1 calc(33.333% - 1.25rem);
 	min-width: 15.625rem;
