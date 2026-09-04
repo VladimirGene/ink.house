@@ -33,6 +33,7 @@
 	line-height: 110%;
 	margin: 0;
 	padding-bottom: 1.25rem;
+	font-weight: 500;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

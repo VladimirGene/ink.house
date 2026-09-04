@@ -28,5 +28,6 @@
 	/* container  */
 	--container-width: 1080px;
 	--container-padding-x: 15px;
-	--container-padding-x-tablet: 33px;
+	--container-padding-x-small-tablet: 33px;
+	--container-padding-x-tablet: 39px;
 }

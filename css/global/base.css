@@ -31,12 +31,21 @@ body {
 	padding-inline: var(--container-padding-x);
 }
 
-@media (min-width: 576px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 	.container {
 		max-width: calc(
 			var(--container-width) + var(--container-padding-x-tablet) * 2
 		);
 		padding-inline: var(--container-padding-x-tablet);
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.container {
+		max-width: calc(
+			var(--container-width) + var(--container-padding-x-small-tablet) * 2
+		);
+		padding-inline: var(--container-padding-x-small-tablet);
 	}
 }
 
@@ -60,6 +69,12 @@ body {
 	flex-shrink: 0;
 }
 
+@media (max-width: 576px) {
+	.btn {
+		min-height: 3.125rem;
+	}
+}
+
 @media (hover: hover) {
 	.btn:hover {
 		background-color: var(--bg-green);
@@ -76,4 +91,9 @@ body {
 .btn:active {
 	background: var(--bg-active-green);
 	color: #fff;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
 }
